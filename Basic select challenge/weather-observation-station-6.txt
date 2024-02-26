@@ -1,0 +1,15 @@
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) IN ('A', 'E', 'I', 'O', 'U');
+
+
+------------------------------------OR---------------------------------------------
+
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE city like'A%'
+or city like 'E%'
+or city like 'I%'
+or city like 'O%'
+or city like 'U%';
